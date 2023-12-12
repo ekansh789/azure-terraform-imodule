@@ -1,0 +1,4 @@
+- name: install FTP server
+  hosts: all
+  roles:
+    - ftp_server

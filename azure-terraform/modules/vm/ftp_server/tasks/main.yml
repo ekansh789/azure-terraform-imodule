@@ -1,0 +1,12 @@
+---
+# tasks file for ftp_server
+ - name: Install ftp server
+   apt:
+     name: vsftpd
+     state: present
+
+- name: make sure it is enabled  and running
+  service:
+    name: vsftpd
+    state: started
+    enabled: yes 
